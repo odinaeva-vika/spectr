@@ -150,7 +150,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1330px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -244,15 +244,6 @@ body {
           transform: rotate(-45deg);
 }
 
-.swiper {
-  max-width: 600px;
-  height: 300px;
-}
-
-.header {
-  background-color: aqua;
-}
-
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,8 +256,35 @@ body {
           align-items: center;
 }
 
+.header__top {
+  margin: 21px 0 15px 0;
+}
+
+.menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-top__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 60px;
+}
+
 .logo {
-  font-size: 2.5rem;
+  font-size: rem(40);
 }
 
 .menu__list {
@@ -276,9 +294,51 @@ body {
   gap: 20px 20px;
 }
 
-/* body{
-  display: flex;
-} */
+/*banner*/
+
+.no-webp .banner{
+  background-image: url("../img/banner.jpg"); }
+
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 502px;
+  border-radius: 10px;
+}
+
+.banner__content {
+  padding: 91px 0 0 114px;
+  max-width: 571px;
+}
+
+.banner__title {
+  font-family: Manrope;
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.banner__description {
+  font-family: Manrope;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.banner__text {
+  font-family: Manrope;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.button {
+  display: inline-block;
+}
 
 @media (max-width: 961px) {
   .burger {
@@ -313,3 +373,5 @@ body {
             transform: none;
   }
 }
+
+.webp .banner{ background-image: url(../img/banner.webp); }

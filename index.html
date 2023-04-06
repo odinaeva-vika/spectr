@@ -4,15 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230406153737">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230406164608">
   <title>Главная</title>
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
   <div class="container">
+    <div class="header__top">
+      <nav class="menu-top">
+        <ul class="menu-top__list">
+          <li class="menu-top__item"><a class="menu-top__link" href="#!">О нас</a></li>
+          <li class="menu-top__item"><a class="menu-top__link" href="#!">Производство</a></li>
+          <li class="menu-top__item"><a class="menu-top__link" href="#!">Продукция на заказ</a></li>
+          <li class="menu-top__item"><a class="menu-top__link" href="#!">Услуги</a></li>
+          <li class="menu-top__item"><a class="menu-top__link" href="#!">Оплата и доставка</a></li>
+          <li class="menu-top__item"><a class="menu-top__link" href="#!">Контакты</a></li>
+        </ul>
+
+        <div class="header__contacts">
+          <a class="header__contacts-phone" href="tel:74957256630">+7 (495) 725-66-30</a>
+          <a class="header__contacts-address" href="info@plenka-spectr.ru">info@plenka-spectr.ru</a>
+        </div>
+      </nav>
+    </div>
     <div class="header__inner">
-      <h1 class="logo">ORGANIC JUICY CO.</h1>
+      <a href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture></a>
       <nav class="menu" data-nav>
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="#first">HOME</a></li>
@@ -29,33 +46,22 @@
   </div>
 </header>
     <main class="main">
-      <section class="swiper-page">
+      <section class="banner">
         <div class="container">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">Slide 11</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-    
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-    
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+          <div class="banner__content">
+            <h1 class="banner__title">Продукция на заказ</h1>
+            <h2 class="banner__description">Пленка, стрейч, мешки, пакеты.</h2>
+            <p class="banner__text">Противоположная точка зрения подразумевает, что элементы политического процесса являются только
+              методом политического
+              участия и в равной степени предоставлены сами себе. Кстати, элементы политического процесса неоднозначны и будут
+              объединены в целые кластеры себе подобных.</p>
+            <a class="button" href="#!"></a>
           </div>
         </div>
       </section>
     </main>
     <footer>футер</footer>
   </div>
-  <script src="js/app.min.js?_v=20230406153737"></script>
+  <script src="js/app.min.js?_v=20230406164608"></script>
 </body>
 </html>
