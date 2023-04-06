@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230406181411">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Главная</title>
 </head>
 <body>
@@ -29,19 +29,36 @@
       </nav>
     </div>
     <div class="header__inner">
-      <a href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture></a>
-      <nav class="menu" data-nav>
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#first">HOME</a></li>
-          <li class="menu__item"><a class="menu__link" href="#swiper-page">ABOUT</a></li>
-          <li class="menu__item"><a class="menu__link" href="#third">PRODUCTS</a></li>
-          <li class="menu__item"><a class="menu__link" href="#!">LOCATION</a></li>
-          <li class="menu__item"><a class="menu__link" href="#!">CONTACT</a></li>
-        </ul>
-      </nav>
-      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
-        <span class="burger__line"></span>
-      </button>
+      <div class="header__box-menu">
+        <a href="#!"><img src="img/logo.png" alt="Логотип"></a>
+        <button class="burger button--menu" data-burger aria-label="Открыть меню" aria-expanded="false">
+          Каталог продукции
+        </button>
+        <nav style="display: none;" class="menu" data-nav>
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#first">Пленка полиэтиленовая</a></li>
+            <li class="menu__item"><a class="menu__link" href="#swiper-page">Пленка воздушно-пузырчатая</a></li>
+            <li class="menu__item"><a class="menu__link" href="#third">Пленка армированная</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Стрейч-пленка</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Ленты сигнальные</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Скотч упаковочный</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Лента малярная</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Нетканые материалы</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Пароизоляция</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Геотекстиль</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Мешки полипропиленовые</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Мешки для мусора черные</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Перчатки</a></li>
+            <li class="menu__item"><a class="menu__link" href="#!">Ткань хозяйственная</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__box-info">
+        <button class="header__magnifier">
+          <img class="magnifier__img" src="img/magnifier.png" alt="Поиск">
+        </button>
+        <a class="button" href="#!">Связаться с нами</a>
+      </div>
     </div>
   </div>
 </header>
@@ -103,6 +120,6 @@
     </main>
     <footer>футер</footer>
   </div>
-  <script src="js/app.min.js?_v=20230406181411"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
