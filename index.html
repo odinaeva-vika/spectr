@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230406170449">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Главная</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
       </nav>
     </div>
     <div class="header__inner">
-      <a href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture></a>
+      <a href="#!"><img src="img/logo.png" alt="Логотип"></a>
       <nav class="menu" data-nav>
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="#first">HOME</a></li>
@@ -46,12 +46,12 @@
   </div>
 </header>
     <main class="main">
-      <section class="banner">
+      <section class="swiper">
         <div class="container">
-          <div class="banner__content">
-            <h1 class="banner__title">Продукция на заказ</h1>
-            <h2 class="banner__description">Пленка, стрейч, мешки, пакеты.</h2>
-            <p class="banner__text">Противоположная точка зрения подразумевает, что элементы политического процесса являются только
+          <div class="swiper__content">
+            <h1 class="swiper__title">Продукция на заказ</h1>
+            <h2 class="swiper__description">Пленка, стрейч, мешки, пакеты.</h2>
+            <p class="swiper__text">Противоположная точка зрения подразумевает, что элементы политического процесса являются только
               методом политического
               участия и в равной степени предоставлены сами себе. Кстати, элементы политического процесса неоднозначны и будут
               объединены в целые кластеры себе подобных.</p>
@@ -59,9 +59,50 @@
           </div>
         </div>
       </section>
+
+      <section class="banner">
+        <div class="container">
+          <div class="banner__boxes boxes-banner">
+            <div class="boxes-banner__box" style="background-image: url(img/banner1.jpg);">
+              <h2 class="boxes-banner__title">Производство</h2>
+              <p class="boxes-banner__text">Противоположная точка зрения подразумевает, что элементы политического процесса являются только методом политического
+              участия и в равной степени.</p>
+              <a class="banner__link" href="#!">Подробнее</a>
+            </div>
+            <div class="boxes-banner__box" style="background-image: url(img/banner2.jpg);">
+              <h2 class="boxes-banner__title">Продукция на заказ</h2>
+              <p class="boxes-banner__text">Противоположная точка зрения подразумевает, что элементы политического процесса являются
+                только методом политического
+                участия и в равной степени.</p>
+              <a class="banner__link" href="#!">Подробнее</a>
+            </div>
+            <div class="boxes-banner__box" style="background-image: url(img/banner3.jpg);">
+              <h2 class="boxes-banner__title">Каталог продукции</h2>
+              <p class="boxes-banner__text">Противоположная точка зрения подразумевает, что элементы политического процесса являются
+                только методом политического
+                участия и в равной степени.</p>
+              <a class="banner__link" href="#!">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-first">
+        <div class="container">
+          <div class="banner-first__box" style="background-image: url(img/banner-first.jpg);">
+            <div class="banner-first__content">
+              <h3 class="banner-first__title">Подберем для вас необходимую упаковку,
+                соответствующую стандартам маркетплейсов</h3>
+              <p class="banner-first__text">Вы решили выходить на маркетплейсы? Хорошая идея, которая даст в перспективе неплохой рост
+                продаж. Но, как всегда есть
+                куча подводных камней при работе с ними. Одним из них является неправильная упаковка и маркировка товара.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>футер</footer>
   </div>
-  <script src="js/app.min.js?_v=20230406170449"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
