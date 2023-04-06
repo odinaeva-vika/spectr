@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230406195146">
   <title>Главная</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
     </div>
     <div class="header__inner">
       <div class="header__box-menu">
-        <a href="#!"><img src="img/logo.png" alt="Логотип"></a>
+        <a href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture></a>
         <button class="burger button--menu" data-burger aria-label="Открыть меню" aria-expanded="false">
           Каталог продукции
         </button>
@@ -55,7 +55,7 @@
       </div>
       <div class="header__box-info">
         <button class="header__magnifier">
-          <img class="magnifier__img" src="img/magnifier.png" alt="Поиск">
+          <picture><source srcset="img/magnifier.webp" type="image/webp"><img class="magnifier__img" src="img/magnifier.png" alt="Поиск"></picture>
         </button>
         <a class="button" href="#!">Связаться с нами</a>
       </div>
@@ -117,9 +117,48 @@
           </div>
         </div>
       </section>
+
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog__title">Каталог продукции</h2>
+          <div class="catalog__boxes boxes-catalog">
+            <a href="#!" class="boxes-catalog__box" style="background-image: url(img/content/catalog-main/catalog_main.jpg);">
+              <h3 class="boxes-catalog__title">Пленка
+              полиэтиленовая</h3>
+            </a>
+            <a href="#!" class="boxes-catalog__box" style="background-image: url(img/content/catalog-main/catalog_main.jpg);">
+              <h3 class="boxes-catalog__title">Пленка
+              воздушно-пузырчатая</h3>
+            </a>
+            <a href="#!" class="boxes-catalog__box" style="background-image: url(img/content/catalog-main/catalog_main.jpg);">
+              <h3 class="boxes-catalog__title">Пленка
+              армированная</h3>
+            </a>
+            <a href="#!" class="boxes-catalog__box" style="background-image: url(img/content/catalog-main/catalog_main.jpg);">
+              <h3 class="boxes-catalog__title">Стрейч-пленка</h3>
+            </a>
+
+            <a href="#!" class="boxes-catalog__box" style="background-image: url(img/content/catalog-main/catalog_main.jpg);">
+              <h3 class="boxes-catalog__title">Ленты
+              сигнальные</h3>
+            </a>
+            <a href="#!" class="boxes-catalog__box" style="background-image: url(img/content/catalog-main/catalog_main.jpg);">
+              <h3 class="boxes-catalog__title">Скотч
+              упаковочный</h3>
+            </a>
+            <a href="#!" class="boxes-catalog__box" style="background-image: url(img/content/catalog-main/catalog_main.jpg);">
+              <h3 class="boxes-catalog__title">Лента
+              малярная</h3>
+            </a>
+            <a href="#!" class="boxes-catalog__box">
+              <h3 class="boxes-catalog__title boxes-catalog__title--red">Посмотреть <br>весь каталог</h3>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>футер</footer>
   </div>
-  <script src="js/app.min.js"></script>
+  <script src="js/app.min.js?_v=20230406195146"></script>
 </body>
 </html>
