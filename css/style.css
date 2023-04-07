@@ -1,10 +1,26 @@
 @charset "UTF-8";
 
 @font-face {
+  font-family: fontello;
+  font-display: swap;
+  src: url("../fonts/fontello.woff2") format("woff2"), url("../fonts/fontello.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: Manrope;
   font-display: swap;
   src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2"), url("../fonts/Manrope-ExtraBold.woff") format("woff");
   font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -21,14 +37,6 @@
   font-display: swap;
   src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Manrope;
-  font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -241,6 +249,29 @@ body {
   height: 17px;
 }
 
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-th-large:before {
+  content: "\e805";
+}
+
 /* Бургер меню */
 
 .dropbtn {
@@ -252,18 +283,12 @@ body {
   border: 1px solid #f1f1f1;
 }
 
-.no-webp .dropbtn:before{
-  background-image: url("../img/icon-menu.png"); }
-
-.dropbtn:before {
+.icon-th-large {
   position: absolute;
-  content: "";
-  top: 11px;
-  left: 12px;
-  width: 23px;
-  height: 23px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  top: 8px;
+  left: 9px;
+  font-size: 23px;
+  color: #ec1c3e;
 }
 
 .dropdown {
@@ -303,6 +328,10 @@ body {
   color: #ffffff;
   background-color: #ec1c3e;
   border-radius: 5px 5px 0 0;
+}
+
+.dropdown:hover .icon-th-large {
+  color: #ffffff;
 }
 
 .dropdown__list li {
@@ -436,6 +465,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px 26px;
+}
+
+.header__box-logo {
+  text-align: center;
 }
 
 .header__button {
@@ -678,19 +711,31 @@ body {
 }
 
 .boxes-catalog__box {
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right;
+  position: relative;
   background-color: #f1f1f1;
-  padding: 47px 23px 20px 34px;
   height: 252px;
   border-radius: 10px;
 }
 
 .boxes-catalog__title {
+  position: absolute;
+  max-width: 229px;
+  top: 47px;
+  left: 34px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
+}
+
+.boxes-catalog__box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
 }
 
 .boxes-catalog__title--red {
@@ -1420,8 +1465,6 @@ body {
 .webp .phone-icon:before{ background-image: url(../img/consultation_phone.webp); }
 
 .webp .email-icon:before{ background-image: url(../img/consultation-email.webp); }
-
-.webp .dropbtn:before{ background-image: url(../img/icon-menu.webp); }
 
 .webp .form-search__btn{ background-image: url(../img/magnifier.webp); }
 
