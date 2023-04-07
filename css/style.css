@@ -280,10 +280,6 @@ body {
   border-bottom: 0px;
 }
 
-/* .menu__link--hover {
-  color: #6e0d1d;
-} */
-
 .header {
   position: relative;
 }
@@ -536,6 +532,13 @@ body {
   margin-top: 58px;
 }
 
+.banner__link {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #ec1c3e;
+}
+
 .boxes-banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,7 +701,7 @@ body {
 }
 
 .consultation__content-text {
-  width: 480px;
+  max-width: 480px;
   margin: 33px 0 34px 0;
   font-size: 15px;
   line-height: 22px;
@@ -1009,42 +1012,36 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px 53px;
+  gap: 0 55px;
 }
 
+/* navigation */
+
 .footer__title {
-  margin-bottom: 26px;
+  padding-bottom: 23px;
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
+  cursor: auto;
 }
 
-.footer-navigation__item {
-  font-size: 14px;
-  line-height: 26px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+.footer-navigation {
+  position: relative;
+  display: inline-block;
 }
 
-.footer-navigation__item:hover {
-  color: #898989;
-}
-
-.footer-products__nav {
+.footer-navigation__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px 37px;
+  gap: 10px 37px;
+  top: 45px;
+  left: 1px;
+  z-index: 1;
+  background-color: #fafafa;
 }
 
-.footer-products__title {
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 700;
-}
-
-.footer-products__item {
+.footer-navigation__nav a {
   font-size: 14px;
   line-height: 26px;
   -webkit-transition: all 0.3s;
@@ -1052,7 +1049,46 @@ body {
   transition: all 0.3s;
 }
 
-.footer-products__item:hover {
+.footer-navigation__nav a:hover {
+  color: #898989;
+}
+
+/* products */
+
+.products__dropbtn {
+  padding-bottom: 23px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  cursor: auto;
+}
+
+.footer-products {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-products__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px 37px;
+  top: 45px;
+  left: 1px;
+  min-width: 230px;
+  z-index: 1;
+  background-color: #fafafa;
+}
+
+.footer-products__content a {
+  font-size: 14px;
+  line-height: 26px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-products__content a:hover {
   color: #898989;
 }
 
@@ -1111,12 +1147,56 @@ body {
   .header__contacts {
     gap: 0 20px;
   }
-}
 
-@media (max-width: 950px) {
-  .footer-products__nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__box-nav {
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__title {
+    cursor: pointer;
+  }
+
+  .footer-navigation__nav {
+    min-width: 180px;
+    position: absolute;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+    left: -50%;
+    right: -50%;
+  }
+
+  .footer-navigation:hover .footer-navigation__nav {
+    display: block;
+    top: -175px;
+  }
+
+  .products__dropbtn {
+    cursor: pointer;
+  }
+
+  .footer-products__content {
+    position: absolute;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+    left: -50%;
+    right: -50%;
+  }
+
+  .footer-products:hover .footer-products__content {
+    display: block;
+    top: -380px;
   }
 }
 
@@ -1185,6 +1265,12 @@ body {
   }
 }
 
+@media (max-width: 689px) {
+  .footer__inner {
+    gap: 10px 20px;
+  }
+}
+
 @media (max-width: 675px) {
   .consultation__content {
     padding: 58px 17px 55px 17px;
@@ -1192,6 +1278,19 @@ body {
 
   .form {
     padding: 15px 17px 55px 17px;
+  }
+}
+
+@media (max-width: 584px) {
+  .footer__inner {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
