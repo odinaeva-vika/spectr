@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230407113422">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230407130327">
   <title>Главная</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
     </div>
     <div class="header__inner">
       <div class="header__box-menu">
-        <a href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture></a>
+        <a class="header__logo" href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture></a>
         <div class="dropdown">
           <button class="dropbtn" aria-label="Открыть меню">Каталог продукции</button>
           <nav class="dropdown-content">
@@ -190,15 +190,20 @@
           <div class="consultation__inner">
             <div class="consultation__content">
               <h2 class="consultation__content-title">Требуеться консультация
-              специалиста</h2>
-              <p class="consultation__content-text">Противоположная точка зрения подразумевает, что базовые сценарии поведения пользователей и по сей день остаются уделом
-              либералов, которые жаждут быть функционально разнесены на независимые элементы. В рамках спецификации</p>
+                специалиста</h2>
+              <p class="consultation__content-text">Противоположная точка зрения подразумевает, что базовые сценарии поведения
+                пользователей и по сей день остаются уделом
+                либералов, которые жаждут быть функционально разнесены на независимые элементы. В рамках спецификации</p>
               <p class="consultation__content-description">Выберите удобный способ консультации</p>
               <div class="consultation-contacts">
-                <span class="phone-icon"></span>
-                <a class="consultation-contacts__phone" href="tel:74957256630">+7 (495) 725-66-30</a>
-                <span class="email-icon"></span>
-                <a class="consultation-contacts__email" href="info@plenka-spectr.ru">info@plenka-spectr.ru</a>
+                <div class="consultation-contacts__box">
+                  <span class="phone-icon"></span>
+                  <a class="consultation-contacts__phone" href="tel:74957256630">+7 (495) 725-66-30</a>
+                </div>
+                <div class="consultation-contacts__box">
+                  <span class="email-icon"></span>
+                  <a class="consultation-contacts__email" href="info@plenka-spectr.ru">info@plenka-spectr.ru</a>
+                </div>
               </div>
             </div>
             <form class="form" action="">
@@ -210,7 +215,7 @@
               <div>
                 <button class="button" type="submit">Отправить</button>
               </div>
-              
+      
             </form>
           </div>
         </div>
@@ -273,6 +278,6 @@
   </div>
 </footer>
   </div>
-  <script src="js/app.min.js?_v=20230407113422"></script>
+  <script src="js/app.min.js?_v=20230407130327"></script>
 </body>
 </html>
